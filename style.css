@@ -1,0 +1,102 @@
+* {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.svg-container {
+    width: 90%;
+    height: 500px;
+    border: 5px solid #333;
+    background-color: #2e3b4e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: auto; 
+    margin: 20px auto;
+    display: block;
+}
+
+svg {
+    width: 120%; 
+    height: 120%; 
+}
+.node {
+    fill: #4da6ff;
+    stroke: #1e4b79;
+    stroke-width: 2;
+    cursor: grab;
+    transition: fill 0.3s ease;
+}
+
+.node:hover {
+    fill: #369;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    fill: #333;
+}
+
+.link {
+    stroke: #666;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 100px;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+    grid-gap: 20px;
+    background-color: rgb(94, 94, 94);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.modal-header {
+    background-color: #432b4e;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 8px 8px 0 0;
+}
+
+.close {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+h1 {
+    font-size: 3rem; 
+    text-align: center;
+    color: #0f1896; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+
+h1:hover {
+    transform: scale(1.1); 
+    color: #1b3272;
+}
