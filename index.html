@@ -10,21 +10,22 @@
 </head>
 <body>
     <h1>Diagrama de Arquitetura - Rede Social - Tinder</h1>
+  <div class="svg-container">
+    <svg id="diagram"></svg>
+  </div>
 
-    <div class="svg-container">
-        <svg id="diagram"></svg>
+  <!-- Modal para exibir informações dos nós -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="close" class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
     </div>
+  </div>
 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span id="close" class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <h2 id="modal-title"></h2>
-                <p id="modal-description"></p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
